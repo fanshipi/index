@@ -1,0 +1,93 @@
+@charset "utg-8";
+/*css文档*/
+
+html,body{width: 1000px;}
+*{font-family: 宋体;margin:0 auto;padding:0;font-size: 12px;}
+li{list-style: none;}
+a{text-decoration: none;}
+
+/* 在旧版本浏览器中显示HTML5元素 */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+/* 清除浮动影响 */
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clear{zoom:1;}/* HACK_IE_LTE_7: IE7及更老版本的IE不支持:after伪元素 */
+
+.wrap{width: 1000px;margin:0 auto;}
+/*头部*/
+.top{width: 1000px;background: #fff;}
+.top_content{ background: url(http://img.mukewang.com/53edadad0001efe202000070.jpg) no-repeat;
+ width: 1000px;height: 65px;margin:0 auto;}
+.top .top_content .list li{line-height: 80px;float: right;width:120px;}
+.top .top_content .list a{font-size: 16px;color:#000;}
+.top .top_content .list a:hover{color: red;}
+.top .top_content .list a:link,a:visited{text-decoration: none;}
+/*头部结束*/
+
+/*导航条1*/
+.nav_bar img .active{background: #000;}
+.nav_bar a:hover{color: red;}
+.nav_bar a:link,a:visited{text-decoration: none;}
+.nav{margin-top: 10px;margin-bottom: 10px;}
+.nav_bar_left a{color:#fff;background-color: #BD3847;float:left;width: 200px;height: 40px;line-height: 40px;text-align: center;}
+.nav_bar_right a{color:#fff;background-color: #BD3847;float: left;width: 800px;height: 40px;line-height: 40px;}
+
+/*主题分类*/
+.kind{width:1000px;padding-bottom:5px;overflow: hidden;}
+.kind a{float: left;color: #000;}
+.kind a img{width: 326px;}
+.kind a:hover{color: red;}
+.kind a:link,a:visited{text-decoration: none;}
+.kind .kind_left{border: 1px solid #E8E8E8}
+.kind .kind_middle{border: 1px solid #E8E8E8;}
+.kind .kind_right{border: 1px solid #E8E8E8;}
+.kind .kind_left a img{margin:5px 8px 15px 1px;}
+.kind .kind_middle a img{margin:5px 8px 15px 1px;}
+.kind .kind_right a img{margin:5px 0px 15px 0px;}
+.kind strong{padding-top: 3px;display: block;line-height:24px;text-align: center;}
+
+/*信息栏中心*/
+.news_bar{height: 292px;}
+.news_bar_left .news_bar_middle .news_bar_right{margin-top: 30px;}
+.news_bar a{color:#000;} 
+.news_bar a:link,a:visited{text-decoration: none;}
+.news_bar a:hover{color: red;}
+/*新闻中心*/
+.news_bar_left{width: 329px;height: 292px;font-family:"Microsoft YaHei","微软雅黑","SimSun","宋体";font-size: 12px; border: 1px solid #E8E8E8;float:left;}
+.news_bar_left_title{background-color: #BD3847;float:left;width: 329px;height: 40px;line-height: 40px;text-align: center;}
+.text1 span,.text2 span,.text3 span{color: #000;}
+.news_bar_left .list{margin-top:50px; }
+.news_bar_left .list li{zoom:1;}
+.news_bar_left .list .date{float: left;width: 36px;height: 60px;margin-top: 8px; background-color:#BD3847; border-radius: 4px; text-align: center; color:#fff;}
+.news_bar_left .list .text{float: left;width: 280px;margin-left: 10px;}
+/*.news_bar_left .list .text h5{padding-bottom: 2px;}*/
+
+/*热门活动*/
+.news_bar_middle{width: 330px;height: 292px;border: 1px solid #E8E8E8;float:left;margin:0px 3px 0px 3px; }
+.news_bar_middle_title{background-color: #BD3847;float:left;width: 330px;height: 40px;line-height:40px;text-align: center;}
+.news_bar_middle .pictu{margin-top:40px;}
+.news_bar_middle .pictu img{width: 326px;height: 180px;}
+.news_bar_middle_content{margin-top:10px;}
+.news_bar_middle_content a span{color: #000;font-size:12px;line-height: 20px;}
+/*联系我们*/
+.news_bar_right{width: 329px;height: 292px; border: 1px solid #E8E8E8;float:left;}
+.news_bar_right_title{background-color: #BD3847;width: 329px;height: 40px;line-height:40px;text-align: center;}
+.news_bar_right_content .mb{background: #fff;text-align: left;}
+
+/*底部版权部分*/
+#footer{width: 100%;padding-top:35px;}
+#footer address{background-color: #e8e8e8;height: 60px;line-height: 60px;vertical-align: middle; text-align: center; }
